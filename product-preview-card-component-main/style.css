@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-  max-width: 35rem;
+  max-width: 34rem;
   background-color: var(--container-color);
   display: flex;
   border-radius: 6px;
@@ -42,7 +42,7 @@ body {
 
 .text-side {
   flex: 1;
-  padding: 1.5rem;
+  padding: 1.2rem 1.5rem;
   font-weight: 500;
   font-size: 1rem;
   color: #bbb;
@@ -57,14 +57,13 @@ body {
   font-family: var(--title-font);
   color: var(--title-color);
   font-size: 2.2rem;
-  line-height: 2rem;
-  padding-right: 2.3rem;
-  margin: 12px 0 20px;
+  line-height: 2.5rem;
+  margin: 18px 0 18px;
+  width: 90%;
 }
 .description {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--description-color);
-  padding-right: 2rem;
   line-height: 21px;
 }
 .price-lists {
@@ -106,7 +105,6 @@ body {
 
 .image-side {
   flex: 1;
-  height: 50vh;
 }
 .image-side img {
   width: 100%;

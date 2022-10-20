@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --body-font: "Outfit", sans-serif;
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue: hsl(217, 54%, 11%);
+  --very-dark-card: hsl(216, 50%, 16%);
+  --very-dark-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  font-size: 18px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 17rem;
+  padding: 0.8rem;
+  background-color: var(--very-dark-card);
+  border-radius: 6px;
+  color: var(--white);
+}
+.img-container img {
+  max-width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.view {
+  position: absolute;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 200, 0, 0.3);
+  border-radius: 6px;
+  transition: all 0.4s ease;
+}
+.view img {
+  width: 30px;
+}
+.img-container:hover .view {
+  top: 0;
+}
+.container__text-desc {
+  padding: 0.7rem 0 0;
+}
+.container__text-desc h3 {
+  font-size: 1.1rem;
+}
+.container__text-desc p {
+  font-size: 0.8rem;
+  color: var(--soft-blue);
+  margin: 12px 0 10px;
+}
+.eth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.eth-time {
+  display: flex;
+  align-items: center;
+}
+.eth-time p {
+  font-size: 0.75rem;
+  margin-left: 6px;
+}
+.eth-desc {
+  display: flex;
+  align-items: center;
+}
+.eth-desc h6 {
+  color: var(--cyan);
+  margin-left: 6px;
+}
+.creation {
+  display: flex;
+  align-items: center;
+  border-top: solid 1px var(--very-dark-line);
+  padding-top: 0.3rem;
+  margin-top: 5px;
+}
+.creation img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.creation p {
+  margin-left: 8px;
+  font-size: 0.75rem;
+}
+.creation p span {
+  color: var(--white);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 1rem;
+  }
+}

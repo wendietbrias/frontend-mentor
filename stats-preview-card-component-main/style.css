@@ -30,7 +30,7 @@
 }
 
 .card-container {
-  width: 56%;
+  width: 55%;
   background-color: var(--card-background);
   border-radius: 4px;
   display: flex;
@@ -39,8 +39,8 @@
 }
 
 .card-container__text {
-  width: 50%;
-  padding: 2.5rem 3.1rem;
+  width: 53%;
+  padding: 2.5rem 2.8rem;
 }
 
 .card-container__text h1 {
@@ -58,8 +58,8 @@
   font-size: 0.85rem;
   color: var(--stat-heading);
   line-height: 24px;
-  margin: 14px 0 35px;
-  width: 89%;
+  margin: 16px 0 35px;
+  width: 86%;
 }
 
 .text__data {
@@ -79,7 +79,7 @@
 }
 
 .card-container__img {
-  width: 50%;
+  width: 47%;
   position: relative;
   height: 335px;
 }
@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 420px) {
   .container {
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 
   .card-container {
@@ -112,7 +112,7 @@
   .card-container__text {
     width: 100%;
     order: 2;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1.5rem;
   }
 
   .card-container__text h1 {
@@ -124,7 +124,7 @@
   .card-container__text p {
     text-align: center;
     width: 100%;
-    margin: 10px 0 20px;
+    margin: 20px 0 25px;
   }
 
   .card-container__img {
@@ -145,5 +145,13 @@
 
   .text__data-content {
     text-align: center;
+  }
+
+  .text__data-content h5 {
+    font-size: 1rem;
+  }
+
+  .text__data-content p {
+    font-size: 0.85rem;
   }
 }

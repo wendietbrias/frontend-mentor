@@ -36,7 +36,13 @@
         </section>
         <section class="card-container__img">
           <div class="top__background"></div>
-          <img src="images/image-header-desktop.jpg" alt="desktop" />
+          <picture>
+            <source
+              media="(max-width:450px)"
+              srcset="images/image-header-mobile.jpg"
+            />
+            <img src="images/image-header-desktop.jpg" alt="image desktop" />
+          </picture>
         </section>
       </div>
     </main>
